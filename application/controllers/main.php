@@ -18,7 +18,7 @@ class Main extends CI_Controller {
         $this->load->view($view, $data);
         $this->load->view('include/footer');
     }
-
+    //Giriş İşlemi
     public function login(){
 
         $giris = $this->main_model->login();
@@ -35,7 +35,7 @@ class Main extends CI_Controller {
         }
 
     }
-
+    //Çıkış İşlemi
     public function logout(){
         $this->session->sess_destroy();
         redirect(base_url());
