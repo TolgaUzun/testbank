@@ -26,7 +26,7 @@
             <li><a href="<?= base_url("anasayfa") ?>"><span class="glyphicon glyphicon-home"></span> Ana Sayfa</a></li>
             <li><a href="istatistik.php"><span class="glyphicon glyphicon-stats"></span> İstatistiklerim</a></li>
             <li><a href="profil.php"><span class="glyphicon glyphicon-user"></span> Profilim</a></li>
-            <li><a href="soruKayit.php"><span class="glyphicon glyphicon-log-in"></span> Soru Gönder</a></li>
+            <li><a href="<?= base_url("sorukayit") ?>"><span class="glyphicon glyphicon-log-in"></span> Soru Gönder</a></li>
             <li><a href="iletisim.php"><span class="glyphicon glyphicon-envelope"></span> İletişim</a></li>
             <li><a href="<?= base_url("main/logout") ?>"><span class="glyphicon glyphicon-off"></span> Çıkış</a></li>
         </ul>

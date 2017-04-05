@@ -41,7 +41,17 @@
         <div class="col-lg-12">
             <button type="submit" class="btn btn-success col-xs-12 col-md-2 btn-lg pull-right" id="kbuton">Kayıt Ol</button>
         </div>
+        <?php
+        if (!empty($msg)) {
+            ?>
+            <div class="col-lg-12">
+                <div class="alert alert-success"><?= $msg ?></div>
+            </div>
+            <?php
+        }
+        ?>
     </form>
+
 </div>
 <script>
     $("#tpass").keyup(function(){

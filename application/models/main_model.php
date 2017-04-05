@@ -22,5 +22,9 @@ class Main_model extends CI_Model{
   public function kategori(){
     return $this->db->get("kategori")->result();
   }
+
+  public function add_soru($data){
+    return $this->db->insert("soru",$data);
+  }
 }
 ?>
