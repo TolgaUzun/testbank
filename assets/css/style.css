@@ -1,0 +1,692 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    padding:20px;
+    background-color:#CCCCCC!important;
+}
+#page{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #444;
+    margin-top:-10px;
+}
+.content-box{
+    margin-top:10px;
+    position:relative;
+}
+.sayfa{
+  color:#999;
+  padding: 0!important;
+}
+a{
+	transition:all .3s linear;
+}
+a:hover{
+	text-decoration:none!important;
+	opacity:.7;
+}
+#masthead{
+    background: -webkit-linear-gradient(#693689, #939); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#693689, #939); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#693689, #939); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#693689, #939); /* Standard syntax */
+	color:#fff;
+    padding:20px;
+    border-radius:6px;
+    margin:0!important;
+    position: relative;
+    overflow: hidden;
+
+}
+#user{
+    position: absolute;
+    right: 20px;
+    bottom:10px;
+}
+#user {
+    line-height: 30px;
+    cursor: pointer;
+}
+#toggle{
+    background: #727272;
+    margin-top: -20px!important;
+    padding: 0!important;
+    padding-top:20px!important;
+    border-radius: 0 0 6px 6px!important;
+    display: none;
+}
+#toggle ul {
+    list-style-type: none;
+    padding: 0!important;
+    margin: 0!important;
+}
+#toggle ul li {
+    display: inline-block;
+
+    color:#fff;
+}
+#toggle ul li a {
+    color:#fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px!important;
+}
+#toggle ul li a:hover{
+    text-decoration: none;
+    }
+#toggle ul li :hover{
+    text-decoration: none;
+    background-color: #444;
+    border-radius: 0 0 6px 6px;
+}
+.form-group{
+    margin-left:0!important;
+    margin-right:0!important;
+}
+#masthead h1 a img{
+    width:100px;
+    height:auto;
+}
+#masthead div{
+    margin:0 20px;
+}
+.user{
+    margin-top:20px;
+}
+/*---*/
+#cat{
+    list-style:none;
+    padding:0!important;
+    margin: 0!important;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+#cat li{
+    display:inline-block;
+}
+#cat li input[type=submit]{
+    display:inline-block;
+    width:100px!important;
+    margin-bottom:5px;
+}
+#cat li a:hover{
+    
+}
+#cat li:first-child a{
+    
+}
+
+/*--*/
+/*--sorubox*/
+
+#soru-box{
+    border-radius:6px;
+    padding:20px;
+}
+#cevap-list{
+    list-style:none;
+    margin-left:-40px!important;
+}
+#cevap-list li{
+    margin-bottom:5px;
+}
+#cevap-list li input[type=submit]{
+    width:100%;
+    text-align:left;
+    border-radius: 0 6px 6px 0;
+    white-space: normal;
+}
+.opt{
+    color:#900!important;
+    font-weight:bold;
+    width: 30px!important;
+}
+
+.soru-info{
+    
+}
+.soru-label{
+    line-height:40px;
+    font-weight:bold;
+}
+.soru-p{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    background-color:#FF0000;
+    color:#fff;
+    line-height:30px;
+    text-align:center;
+    margin:0 20px;
+}
+.soru-metin{
+    margin-top:30px!important;
+    margin-bottom:20px;
+}
+.soru-no{
+    margin-right:20px;
+}   
+.soru-no:after{
+    content:" - ";
+}
+#soru-sure{
+    width:0%;
+}
+.joker-box{
+    margin-top:30px;
+    text-align:center;
+}
+/*  /sorubox --*/
+.login-box {
+	background: -webkit-linear-gradient(#f90, #f60); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f90, #f60); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f90, #f60); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f90, #f60); /* Standard syntax */
+	color: #fff;
+	border-radius: 6px 0 0 6px;
+	padding: 10px;
+	height: 320px;
+}
+.register-box {
+	background: -webkit-linear-gradient(#093, #063); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#093, #063); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#093, #063); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#093, #063); /* Standard syntax */
+	color: #fff;
+	border-radius: 0 6px 6px 0;
+    height: 320px;
+    padding:0!important;
+    position: relative;
+    overflow: hidden;
+}
+.register-button{
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+/* info - footer */
+#info{
+    min-height:100px;
+    padding-top:20px;
+}
+#info span{
+    line-height:60px;
+    font-weight:bold;
+    font-size:14px;
+    margin-left:20px;
+}
+
+/*--anasayfa--*/
+.cat-select{
+    text-align:center;
+    padding: 0px!important;
+    margin: 0!important;
+}
+.uyari{
+}
+
+/*---Sıralamalar */
+
+.sira{  
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+.sira:nth-child(2){
+    padding-right: 15px!important;
+    padding-left: 15px!important;   
+}
+.row{
+    margin:0 0 10px 0!important;    
+}
+/*-hata-*/
+
+.hata{
+    text-align:center;  
+}
+.hata .label{
+    font-size:100%!important;
+}
+.hata-aciklama{
+    margin:20px auto;
+}
+.soru-hata{
+    display:none;
+}
+/*-rapor-*/
+.hata-rapor ul{
+    list-style:none;
+    text-align:left;
+    padding: 0!important;
+}
+.rapor-label{
+    display:inline-block;
+    width:50%;
+    text-align: right;
+    margin-right: 40px;
+}
+.rapor-table td{
+  padding: 4px!important;
+  border:none!important;
+}
+.rapor-table td:first-child{
+  width:50%;
+  text-indent: 80px;
+  text-align: right;
+}
+.rapor-table td:last-child{
+  text-align: left;
+  padding-left: 40px!important;
+}
+/*Jokerler*/
+.joker-group{
+
+}
+.form-joker input[type="submit"]{
+    float: left;
+    width:33%;
+}
+.form-joker input[type=submit]{
+    border-radius: 0!important;
+}
+.joker-group form:first-child input[type=submit]{
+    border-radius: 6px 0 0 6px!important;
+}
+.joker-group form:nth-child(3) input[type=submit]{
+    border-radius: 0 6px 6px 0!important;
+}
+.btn-big{
+    height: 80px!important;
+    float: left;
+    width: 150px;
+	 overflow:hidden;
+}
+span.input-group-addon{
+    width:100px;
+}
+.input-group{
+    width:100%!important;
+    margin-bottom: 5px;
+}
+
+table#dataTable{
+    font-size: .8em;
+}
+textarea{
+    resize:vertical;
+}
+.jumbotron{
+    padding: 20px!important;
+}
+.liste{
+    font-size: .8em;
+}
+/* slider stilleri */
+.baslik{
+    position: absolute;
+    font-size: 1.2em;
+    z-index: 5;
+    top:20px;
+    left: 20px;
+}
+#slider{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#slider ol{
+    padding: 0!important;
+    margin: 0!important;
+    list-style-type: none;
+}
+#slider ol li{
+    display: inline;
+    float: left;
+}
+.slide{
+    position: relative;
+    height: 320px;
+}
+.sli-img{
+    z-index: 1;
+    height:100%;
+    width:100%;
+    
+}
+.sli-img img{
+    width:100%;
+}
+.sli-text{
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left:0;
+    right: 0;
+    height: 60px;
+    background-color: #444;
+    opacity: .4;
+    text-shadow:0 0 4px #000;
+}
+.slide h1{
+    position: absolute;
+    z-index: 3;
+    left:20px;
+    bottom: 20px;
+}
+
+
+@media (max-width: 1000px) {
+    .login-box {
+        display: block;
+        border-radius: 6px 6px 0 0;
+    }
+    #register-box {
+        border-radius: 0 0 6px 6px;
+    }
+    .slide{
+      height: 320px;
+      width: 100%;
+      text-align: center;
+    }
+}
+@media screen and (max-width:768px){
+    .side{
+      border:none!important;
+    }
+    body{
+        background-color: #fff!important;
+    }
+    #page{
+        box-shadow: none;
+        background-color: #CCCCCC;
+    }
+    .login-box {
+      display: none;
+        border-radius: 0 0 6px 6px;
+        height: 270px;
+    }
+    .register-box{
+        border-radius: 0 0 6px 6px;
+        height: 270px;
+    }
+    #masthead{
+        padding:0 10px!important;
+    }
+    #toggle{
+        margin: 0;
+    }
+    #masthead h1 a img{
+        width:50px;
+        height:auto;
+    }
+    #masthead div{
+        font-size:.6em;
+    }
+    .soru-label{
+        line-height:20px    ;
+    }
+    .soru-metin p{
+        font-size: 1em!important;
+    }
+    .soru-p{
+        float:right;
+        width:20px;
+        height:20px;
+        line-height:20px;
+        background-color:transparent;
+        font-weight:bold;
+        color:#f00;
+        text-align: left;
+    }
+    .rapor-label, .rapor-table tr td:first-child{
+        width:70%!important;
+        text-indent: 0;
+    }
+    body{
+        padding: 0!important;
+    }
+    #page{
+        border-radius:0px!important;
+    }
+    #catform{
+        margin-bottom: 4px!important;
+    }
+    #toggle ul li{
+        display: block;
+    }
+    .btn-big{
+        min-width: initial!important;
+        min-width: 100px!important;
+        font-size: .9em!important;
+        padding: 0!important;
+    }
+    .sira:nth-child(2){
+    padding-right: 0px!important;
+    padding-left: 0px!important;   
+    }
+  	#kbilgi{
+  		margin-bottom:0px;
+  	}
+    #formKayit{
+        padding-bottom: 100px!important;
+    }
+    #kbuton{
+        margin-top: 20px;
+    }
+    /* Slider*/
+    .slide{
+      height: 270px;
+      text-align: center;
+    }
+}
+#kbilgi{
+  text-align: right;
+}
+.btn.btn-file {
+  position: relative;
+  width: 100%!important;
+  height: 35px!important;
+  overflow: hidden;
+  padding: 0!important;
+}
+.btn.btn-file > input[type='file'] {
+  display: block !important;
+  width: 100% !important;
+  height: 35px !important;
+  opacity: 0 !important;
+  margin-top: -30px!important;
+  position: absolute;
+  cursor: pointer;
+}
+#kayit{
+    display: inline-block;
+    width: 100%;
+    border-radius: 6px 6px 0 0!important;
+}
+#giris{
+    display: inline-block;
+    width: 100%;
+    border-radius: 0!important;
+}
+.regxs, .uyexs{
+    padding-left:0!important;
+    padding-right:0!important;
+}
+
+#page > section > div.row.indexbilgi > div > div > div.panel-heading{
+  /*background-color: rgb(51, 122, 183);*/
+    background-image: -webkit-linear-gradient(#f90, #f60); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(#f90, #f60); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(#f90, #f60); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(#f90, #f60); /* Standard syntax */
+  background-image: linear-gradient(#f90, #f60);
+  background-repeat: repeat-x;
+  border-bottom-color: rgb(255, 102, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(255, 102, 0);
+  border-right-color: rgb(255, 102, 0);
+  border-top-color: rgb(255, 102, 0);
+  color: #fff;
+}
+#page > section > div > div > div > div.panel-heading{
+    background-image: -webkit-linear-gradient(#f90, #f60); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(#f90, #f60); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(#f90, #f60); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(#f90, #f60); /* Standard syntax */
+  background-image: linear-gradient(#f90, #f60);
+  background-repeat: repeat-x;
+  border-bottom-color: #f60;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #f60;
+  border-right-color: #f00;
+  border-top-color: #f60;
+  color: #fff;
+}
+#page > section > div > div > div > div.panel-body{
+  border-bottom-color: #f60;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: #f60;
+  border-right-color: #f60;
+  border-top-color: #f60;
+}
+panel-footer{
+    padding: 0!important;
+    background-image: -webkit-linear-gradient(#f90, #f60); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(#f90, #f60); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(#f90, #f60); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(#f90, #f60); /* Standard syntax */
+  background-image: linear-gradient(#f90, #f60);
+  background-repeat: repeat-x;
+  border-bottom-color: #f60;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #f60;
+  border-right-color: #f60;
+  border-top-color: #f60;
+  color: #fff; 
+}
+.panel-footer{
+  background-color: #fff!important;
+}
+.panel-footer a{
+    text-align: right;
+    display: block;
+    color:#f60;
+    font-size: .8em;
+    text-decoration: none;
+    position: relative;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.liste tr{
+    display: none;
+}
+.indexbilgi{
+    margin-left: -15px!important;
+    margin-right: -15px!important;
+    margin-bottom: 0!important;
+}
+/*404 SAYFASI*/
+.page-404{
+  position:relative;
+  width:350px;
+  height:200px;    
+  margin:100px auto;
+  text-align: center;
+}
+ 
+
+.text-404{    
+  font-size:138px;
+  background:#e9e3dd;
+  background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTdWeWNteABnbzguiXSBxmfc8Z8nh_HHoWoK35QL81x4HnpVmgvQ');
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+  -webkit-animation: square 3s linear infinite;
+  -ms-animation: square 3s linear infinite;
+  animation: square 3s linear infinite;
+  -webkit-background-clip: text;
+  color:transparent;  
+  text-align:center;
+  line-height:200px;
+  position:relative;
+}
+.text-404:nth-of-type(2){
+  text-shadow:none;
+  z-index:2;
+  position:absolute;
+  top:-139px;
+  left:-1px;
+}
+.btn-big{
+	transition:all .3s linear;
+}
+.btn-big:hover{
+	background-color:#eb9316;
+	-ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1); /* Standard syntax */
+}
+/* --profil --*/
+.mbl,
+.mvl,
+.mal {
+  margin-bottom: 20px !important;
+  padding: 20px;
+}
+ul.nav.nav-tabs {
+  border-bottom: 5px solid #fff !important;
+}
+ul.nav.nav-tabs li {
+  margin-bottom: 10px;
+}
+ul.nav.nav-tabs li a {
+  border: 0px;
+  background: none;
+  padding: 10px 20px;
+}
+ul.nav.nav-tabs li.active a {
+  background: #dc6767;
+  color: #fff;
+  border: 0px;
+}
+.kaydet{
+  margin-right: 32px;
+  padding: 6px 30px!important;
+}
+.side{
+  border-left:1px solid #ddd;
+}
+/* istatistik sayfası joker */
+.jis{
+	font-weight:bold;
+	padding-left:10px;
+}
+
+
+/* benim css*/
+
+div.alan  h4{
+    display: inline!important;
+    font-weight: 400!important;
+    color: darkred!important;
+}
+
+div.alan h4:nth-child(3){
+    margin-left: 20px;
+}
+div.alan  h5 {
+    display: inline;
+}
