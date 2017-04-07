@@ -21,19 +21,14 @@
                     <div class="checkbox">
                             <label>
                                     <input type="checkbox" name="cookie">
-                                    Beni hatırla</label>
+                                    Beni hatırla
+                            </label>
                     </div>
                     <button type="submit" class="btn btn-success btn-lg pull-right">Giriş</button>
             </form>
-            <script>sweetAlert("opss","hata","error");</script>
-            <?php
-                if (!empty($msg)){
-            ?>
 
-                    <script>sweetAlert("<?= $baslik ?>",'<?= $metin ?>','<?= $tur ?>')</script>
-            <?php
-                }
-            ?>
+            <?php if (!empty($baslik)){ echo $baslik; }?>
+
 		</div>
 		<div class="col-md-8 col-xs-12 register-box hidden-xs" id="register">
 				<p class="baslik">Farklı kategorilerde yüzlerce soru</p>
@@ -43,7 +38,7 @@
 								<li>
 										<div class="slide">
 												<div class="sli-img">
-														<img src="assets/images/bilim.jpg" alt="bilim">
+														<img src="<?= base_url() ?>assets/images/bilim.jpg" alt="bilim">
 												</div>
 												<div class="sli-text">
 												</div>
@@ -53,7 +48,7 @@
 								<li>
 										<div class="slide">
 												<div class="sli-img">
-														<img src="assets/images/Geography.jpg" alt="cografya">
+														<img src="<?= base_url() ?>assets/images/Geography.jpg" alt="cografya">
 												</div>
 												<div class="sli-text">
 												</div>
@@ -63,7 +58,7 @@
 								<li>
 										<div class="slide">
 												<div class="sli-img">
-														<img src="assets/images/din.jpg" alt="din">
+														<img src="<?= base_url() ?>assets/images/din.jpg" alt="din">
 												</div>
 												<div class="sli-text">
 												</div>
@@ -73,7 +68,7 @@
 								<li>
 										<div class="slide">
 												<div class="sli-img">
-														<img src="assets/images/spor.jpg" alt="spor">
+														<img src="<?= base_url() ?>assets/images/spor.jpg" alt="spor">
 												</div>
 												<div class="sli-text">
 												</div>
@@ -83,7 +78,7 @@
 								<li>
 										<div class="slide">
 												<div class="sli-img">
-														<img src="assets/images/tarih.jpg" alt="tarih">
+														<img src="<?= base_url() ?>assets/images/tarih.jpg" alt="tarih">
 												</div>
 												<div class="sli-text">
 												</div>
@@ -93,7 +88,7 @@
 								<li>
 										<div class="slide">
 												<div class="sli-img">
-														<img src="assets/images/sanat.jpeg" alt="sanat">
+														<img src="<?= base_url() ?>assets/images/sanat.jpeg" alt="sanat">
 												</div>
 												<div class="sli-text">
 												</div>

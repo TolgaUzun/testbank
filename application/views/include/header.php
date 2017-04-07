@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css" />
-    <link rel="stylesheet" href="<?= base_url() ?>assets/css/sweetalert.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/sweetalert2.min.css" />
 </head>
 <body>
 <div class="container" id="page">
@@ -18,9 +18,12 @@
             <h1 style="font-size:2em;">Test Bank</h1>
             <p class="" style="font-size:1.2em;">Bilgini sına, genel kültürünü artır!</p>
         </div>
+        <?php if ($this->session->oturum){ ?>
+
         <div id="user">
           <span>Menü </span> <i class="fa fa-bars fa-2x"></i>
         </div>
+        <?php } ?>
     </header>
     <nav id="toggle" class="row">
         <ul class="col-md-12">

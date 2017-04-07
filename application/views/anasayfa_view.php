@@ -5,11 +5,12 @@
             <p id="kbilgi" class="col-md-4 pull-right">
                 <a href="profil.php" title="profilim">
                     <img src="assets/images/users.png" class="img img-circle hidden-xs" height="50" width="50" alt="kresim"/>&nbsp;
-                    <strong>Tolga Kemal UZUN</strong>
+                    <strong><?php echo $this->session->nick; ?></strong>
                 </a>
             </p>
             <h3 class="col-md-8 text-danger text-left pull-left">Teste başlamak için kategori seçin</h3>
         </div>
+
         <ol id="cat">
             <?php
             foreach($kgetir as $fek)

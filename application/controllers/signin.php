@@ -8,6 +8,9 @@ class Signin extends CI_Controller {
   }
 
   public function index(){
+      if ($this->session->oturum){
+          redirect(base_url("anasayfa"));
+      }
   	$this->view('signin_view');
   }
   public function view($view, $data = null){

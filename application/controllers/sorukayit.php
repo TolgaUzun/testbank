@@ -10,6 +10,10 @@ class Sorukayit extends CI_Controller{
 
     public function index()
     {
+        if (!$this->session->oturum){
+            redirect(base_url());
+        }
+
         $kategori = $this->main_model->kategori();
         $dataView["kategori"] = $kategori;
         $this->view('soruKayit_view',$dataView);
@@ -30,7 +34,8 @@ class Sorukayit extends CI_Controller{
             "soru_b"        =>  $this->input->post("b"),
             "soru_c"        =>  $this->input->post("c"),
             "soru_d"        =>  $this->input->post("d"),
-            "soru_true"     =>  $this->input->post("dogru")
+            "soru_true"     =>  $this->input->post("dogru"),
+            "s_kad_id"      =>  $this->session->id
         );
 
         if($this->main_model->add_soru($data)){

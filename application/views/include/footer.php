@@ -2,7 +2,7 @@
 
 </div>
 <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-<script src="<?= base_url() ?>assets/js/sweetalert.min.js"></script>
+<script src="<?= base_url() ?>assets/js/sweetalert2.min.js"></script>
 <script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script>
 <script src="<?= base_url() ?>assets/js/menu.js"></script>
 <script src="<?= base_url() ?>assets/js/slider.js"></script>
@@ -13,5 +13,6 @@
         $(".register-box").slideToggle();
     });
 </script>
+
 </body>
 </html>

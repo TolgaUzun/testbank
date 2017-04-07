@@ -27,12 +27,13 @@ class Main extends CI_Controller {
         if ($giris){
             $data = array(
                 "nick"      => $this->input->post("kadi"),
-                "oturum"    => true
+                "oturum"    => true,
+                "id"        => $giris[0] -> uye_id
             );
             $this->session->set_userdata($data);
             redirect(base_url("anasayfa"));
         }else{
-            $data = array('baslik' => 'Hata', 'metin' => 'Kullanıcı Adınız veya Şifreniz Yanlış', 'tur' => "error");
+            $data = array('baslik' => 'Hata');
             $this->view("main_view",$data);
 
         }
