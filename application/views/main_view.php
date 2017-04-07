@@ -25,14 +25,12 @@
                     </div>
                     <button type="submit" class="btn btn-success btn-lg pull-right">Giriş</button>
             </form>
+            <script>sweetAlert("opss","hata","error");</script>
             <?php
                 if (!empty($msg)){
             ?>
-                <div class="form-group">
-                    <div class="col-md-12">
-                        <div class="alert alert-danger" role="alert"><?php echo $msg; ?></div>
-                    </div>
-                </div>
+
+                    <script>sweetAlert("<?= $baslik ?>",'<?= $metin ?>','<?= $tur ?>')</script>
             <?php
                 }
             ?>

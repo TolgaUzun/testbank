@@ -13,7 +13,7 @@ class Main_model extends CI_Model{
                   ->where("uye_nick",$this->input->post("kadi"))
                   ->where("uye_pass",$this->input->post("pass"))
                   ->get("uye");
-    if ($sonuc->num_rows == 1){
+    if ($sonuc->num_rows() == 1){
       return true;
     }
     return false;

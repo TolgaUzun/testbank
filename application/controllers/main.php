@@ -8,6 +8,7 @@ class Main extends CI_Controller {
     }
 
     public function index(){
+
         if ($this->session->oturum){
             redirect(base_url("anasayfa"));
         }
@@ -22,6 +23,7 @@ class Main extends CI_Controller {
     public function login(){
 
         $giris = $this->main_model->login();
+
         if ($giris){
             $data = array(
                 "nick"      => $this->input->post("kadi"),
@@ -30,7 +32,8 @@ class Main extends CI_Controller {
             $this->session->set_userdata($data);
             redirect(base_url("anasayfa"));
         }else{
-            echo "kullanıcı adınız veya şifreniz yanlış";
+            $data = array('baslik' => 'Hata', 'metin' => 'Kullanıcı Adınız veya Şifreniz Yanlış', 'tur' => "error");
+            $this->view("main_view",$data);
 
         }
 
