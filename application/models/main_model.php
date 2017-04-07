@@ -26,5 +26,16 @@ class Main_model extends CI_Model{
   public function add_soru($data){
     return $this->db->insert("soru",$data);
   }
+
+  public function soru(){
+    $sonuc = $this->db
+                  ->select('*')
+                  ->from('soru')
+                  ->join('kategori', 'kategori.kategori_id = soru.soru_kategori')
+        ->where('kategori.kategori_id', $this->input->post("kategori"))
+        ->get()->result();
+
+    return $sonuc;
+  }
 }
 ?>

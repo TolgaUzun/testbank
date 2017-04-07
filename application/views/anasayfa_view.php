@@ -50,8 +50,9 @@
 
                                 </div>
                                 <div class="modal-body">
-                                    <form action="" method="post">
+                                    <form action="<?= base_url("soru") ?>" method="post">
                                         <input type="hidden" name="kategori" value="<?= $fek->kategori_id?>">
+                                        <input type="hidden" name="kategoriAdi" value="<?= $fek->kategori_adi?>">
                                         <div class="form-group">
                                             <label>Soru Sayısı</label>
                                             <select name="soruSayisi" class="form-control">
@@ -62,7 +63,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <button type="button" class="btn btn-primary col-md-12">Save changes</button>
+                                            <button type="submit" class="btn btn-primary col-md-12">Teste Başla</button>
                                         </div>
                                     </form>
                                 </div>
