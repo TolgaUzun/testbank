@@ -690,3 +690,7 @@ div.alan h4:nth-child(3){
 div.alan  h5 {
     display: inline;
 }
+
+.modal-body{
+    padding-bottom: 50px;
+}
