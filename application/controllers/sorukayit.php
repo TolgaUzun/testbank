@@ -35,7 +35,7 @@ class Sorukayit extends CI_Controller{
             "soru_c"        =>  $this->input->post("c"),
             "soru_d"        =>  $this->input->post("d"),
             "soru_true"     =>  $this->input->post("dogru"),
-            "s_kad_id"      =>  $this->session->id
+            "soru_kad_id"   =>  $this->session->id
         );
 
         if($this->main_model->add_soru($data)){

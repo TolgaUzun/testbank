@@ -23,4 +23,28 @@ class Soru extends CI_Controller{
         $this->load->view($view, $data);
         $this->load->view('include/footer');
     }
+
+    public function yanitla(){
+        if ($_POST)
+        {
+            @$cevap = $this->input->post("soru".$row->soru_id);
+            if ($row["soru_true"] == $cevap) {
+                $dogru = $dogru+1;
+                $alert = "alert-success";
+
+            }else if($cevap == ""){
+                $bos = $bos+1;
+                $alert = "alert-warning";
+
+            }else{
+                $yanlis = $yanlis+1;
+                $alert = "alert-danger";
+                if ($row["soru_true"] == $cevap){
+
+                    $dogruYanit = "text-success";
+                }
+
+            }
+        }
+    }
 }

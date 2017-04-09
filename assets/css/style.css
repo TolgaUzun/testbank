@@ -689,8 +689,12 @@ div.alan h4:nth-child(3){
 }
 div.alan  h5 {
     display: inline;
+    color: #333;
 }
 
 .modal-body{
     padding-bottom: 50px;
+}
+.soru{
+    color: #333;
 }

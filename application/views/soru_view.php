@@ -1,14 +1,14 @@
 <div class="row sayfa">
     <div class="jumbotron alan">
-        <h4>Kategori : </h4> <h5><?=$_POST["kategoriAdi"] ?></h5>
-        <h4>Soru Sayısı : </h4> <h5><?=$_POST["soruSayisi"] ?></h5>
+        <h4>Kategori : </h4> <h5><?=$this->input->post("kategoriAdi") ?></h5>
+        <h4>Soru Sayısı : </h4> <h5><?=$this->input->post("soruSayisi") ?></h5>
     </div>
-    <form action="#" method="post">
+    <form action="<?= base_url("soru/yanitla") ?>" method="post">
         <?php
         $sayi = 1;
         foreach ($rows as $row){
             ?>
-            <div class="jumbotron">
+            <div class="jumbotron soru">
 
                 <p><span style="color: darkred;"><?= $sayi." - "; ?></span> <?= $row->soru_text; ?></p>
                 <input type="hidden" name="sid" value="<?=$row ->soru_id; ?>" />

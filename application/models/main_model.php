@@ -29,11 +29,11 @@ class Main_model extends CI_Model{
 
   public function soru(){
     $sonuc = $this->db
-                  ->select('*')
-                  ->from('soru')
                   ->join('kategori', 'kategori.kategori_id = soru.soru_kategori')
-        ->where('kategori.kategori_id', $this->input->post("kategori"))
-        ->get()->result();
+                  ->where('kategori.kategori_id', $this->input->post("kategori"))
+                  ->order_by("soru_id","RANDOM")
+                  ->limit($this->input->post("soruSayisi"))
+                  ->get("soru")->result();
 
     return $sonuc;
   }
