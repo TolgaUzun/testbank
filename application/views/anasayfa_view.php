@@ -24,15 +24,15 @@
                             echo '<i class=" fa fa-graduation-cap fa-3x"></i>';
                         }else if ($fek->kategori_id == 2){
                             echo '<i class="fa fa-flask fa-3x"></i>';
-                        }else if ($fek->kategori_id == 3){
-                            echo '<i class="fa fa-globe fa-3x"></i>';
                         }else if ($fek->kategori_id == 4){
-                            echo '<i class="fa fa-shield fa-3x"></i>';
+                            echo '<i class="fa fa-globe fa-3x"></i>';
                         }else if ($fek->kategori_id == 5){
-                            echo '<i class="fa fa-moon-o fa-3x"></i>';
+                            echo '<i class="fa fa-shield fa-3x"></i>';
                         }else if ($fek->kategori_id == 6){
-                            echo '<i class="fa fa-trophy fa-3x"></i>';
+                            echo '<i class="fa fa-moon-o fa-3x"></i>';
                         }else if ($fek->kategori_id == 7){
+                            echo '<i class="fa fa-trophy fa-3x"></i>';
+                        }else if ($fek->kategori_id == 8){
                             echo '<i class="fa fa-university fa-3x"></i>';
                         }
                         ?>
