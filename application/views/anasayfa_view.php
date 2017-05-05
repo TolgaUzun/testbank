@@ -56,6 +56,7 @@
                                         <div class="form-group">
                                             <label>Soru Sayısı</label>
                                             <select name="soruSayisi" class="form-control">
+                                                <option value="2">2</option>
                                                 <option value="10">10</option>
                                                 <option value="20">20</option>
                                                 <option value="50">50</option>
